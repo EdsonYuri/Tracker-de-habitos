@@ -3,7 +3,7 @@ const nlwSetup = new NLWSetup(form)
 const button = document.querySelector("header button")
 
 button.addEventListener("click", add)
-function add() {
+function add() { 
   const toDay = new Date().toLocaleDateString("pt-br").slice(0, -5)
   const dayExists = nlwSetup.dayExists(toDay)
   if (dayExists) {
